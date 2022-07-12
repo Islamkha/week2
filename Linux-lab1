@@ -1,0 +1,201 @@
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  https.pcapng  Music  Pictures  Public  Templates  Videos
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop/Epicode_LAB
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB]
+└─$ mkdir Lab1
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB]
+└─$ cd Lab1               
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ touch Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ ls -l
+total 0
+-rw-r--r-- 1 kali kali 0 Jul 12 17:22 Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ nano Commands.txt 
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ cat Commands.txt 
+1- PID          --> Process ID
+2- User         --> user type
+3- Command      --> how to write the command
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ top               
+top - 17:25:28 up  4:11,  2 users,  load average: 0.22, 0.17, 0.18
+Tasks: 166 total,   2 running, 164 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.7 us,  5.7 sy,  0.0 ni, 88.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   1957.4 total,    160.4 free,   1040.5 used,    756.5 buff/cache
+MiB Swap:    975.0 total,    972.7 free,      2.3 used.    737.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                         
+  65527 kali      20   0   10416   3804   3244 R  12.5   0.2   0:00.02 top                                                                                             
+    649 root      20   0  432656 147156  70812 S   6.2   7.3   6:11.13 Xorg                                                                                            
+    931 kali      20   0  354980  37516  21280 R   6.2   1.9   7:56.59 panel-13-cpugra                                                                                 
+   1003 kali      20   0   16892   1724   1508 S   6.2   0.1   0:01.13 xcape                                                                                           
+  30084 kali      20   0  428192  96580  77680 S   6.2   4.8   0:26.59 qterminal                                                                                       
+      1 root      20   0  166164  11384   8528 S   0.0   0.6   0:02.74 systemd                                                                                         
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd                                                                                        
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                          
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                      
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                     
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                    
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_kthre                                                                                 
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                 
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                 
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.44 ksoftirqd/0                                                                                     
+     14 root      20   0       0      0      0 I   0.0   0.0   0:15.55 rcu_preempt                                                                                     
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.28 migration/0                                                                                     
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                         
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                                                                         
+     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.25 migration/1                                                                                     
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.80 ksoftirqd/1                                                                                     
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-events_highpri                                                                     
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                       
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                           
+     26 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                    
+     27 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                         
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungtaskd                                                                                      
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ top | grep root 
+    649 root      20   0  432656 147156  70812 S  12.5   7.3   6:11.46 Xorg                                                                                            
+      1 root      20   0  166164  11384   8528 S   0.0   0.6   0:02.74 systemd                                                                                         
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd                                                                                        
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                          
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                      
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                     
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                    
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_kthre                                                                                 
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                 
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                 
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.44 ksoftirqd/0                                                                                     
+     14 root      20   0       0      0      0 I   0.0   0.0   0:15.56 rcu_preempt                                                                                     
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.28 migration/0                                                                                     
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                         
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                                                                         
+     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.25 migration/1                                                                                     
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.80 ksoftirqd/1                                                                                     
+     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-events_highpri                                                                     
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                       
+     25 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                           
+     26 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                    
+     27 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                         
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.01 khungtaskd                                                                                      
+
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ top | grep kali
+    935 kali      20   0  352776  27288  19532 S  12.5   1.4   2:46.44 panel-15-genmon                                                                                 
+  65619 kali      20   0   10416   3764   3200 R  12.5   0.2   0:00.02 top                                                                                             
+    931 kali      20   0  354980  37516  21280 S   6.2   1.9   7:57.31 panel-13-cpugra                                                                                 
+
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ ls -l                  
+total 4
+-rw-r--r-- 1 kali kali 86 Jul 12 17:25 Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ chmod u+x Commands.txt 
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ chmod g+w Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ ls -l
+total 4
+-rwxrw-r-- 1 kali kali 86 Jul 12 17:25 Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ sudo useradd kaliuser  
+[sudo] password for kali: 
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ sudo passwd kaliuser
+New password: 
+Retype new password: 
+passwd: password updated successfully
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ chmod o-r Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ sudo mv Commands.txt / 
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ ls   
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB/Lab1]
+└─$ cd /                  
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin   Commands.txt  Esercizio.txt  home        initrd.img.old  lib32  libx32      media  opt   root  sbin  sys  usr  vmlinuz
+boot  dev           etc            initrd.img  lib             lib64  lost+found  mnt    proc  run   srv   tmp  var  vmlinuz.old
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ sudo mv Esercizio.txt /home/kali/Desktop/Epicode_Lab
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ ls                                                  
+bin   Commands.txt  etc   initrd.img      lib    lib64   lost+found  mnt  proc  run   srv  tmp  var      vmlinuz.old
+boot  dev           home  initrd.img.old  lib32  libx32  media       opt  root  sbin  sys  usr  vmlinuz
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ su kaliuser                                         
+Password: 
+$ ls Commands.txt
+Commands.txt
+$ cat Commands.txt
+cat: Commands.txt: Permission denied
+$ nano Commands.txt
+Unable to create directory /home/kaliuser/.local/share/nano/: No such file or directory
+It is required for saving/loading search history or cursor positions.
+
+$ exit
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ chmod o+r Commands.txt
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ su kaliuser
+Password: 
+$ cat Commands.txt
+1- PID          --> Process ID
+2- User         --> user type
+3- Command      --> how to write the command
+$ exit
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ rm Commands.txt
+rm: cannot remove 'Commands.txt': Permission denied
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ sudo rm Commands.txt                                
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ sudo deluser kaliuser
+Removing crontab ...
+Removing user `kaliuser' ...
+Done.
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin   dev  home        initrd.img.old  lib32  libx32      media  opt   root  sbin  sys  usr  vmlinuz
+boot  etc  initrd.img  lib             lib64  lost+found  mnt    proc  run   srv   tmp  var  vmlinuz.old
+                                                                                                                                                                       
+┌──(kali㉿kali)-[/]
+└─$ cd home/kali/Desktop/Epicode_LAB 
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~/Desktop/Epicode_LAB]
+└─$ 
