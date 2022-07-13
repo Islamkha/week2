@@ -15,16 +15,16 @@ int main ()
 	{
 		case 1:
 		printf(" Inserisce Il Nome\n");
-		scanf("%s", &name); // l'utente dovrebbe scrivere il nome ***non risulta***
-		printf(" *Benvenuto*: %s\n",name);
+		scanf("%s", &name); // l'utente dovrebbe inserire il nome
+		printf(" *Benvenuto*: %s\n",name); 
 		printf(" Scegli la risposta corretta\n");
 		printf(" A-Quanti bit in ogni byte ?\n");
 		printf(" 1. 8 bit \n\b 2. 32 bit \n\b 3. 256 bit\n");
-		scanf("%d", &a); // Scrive la risposta che la mette in int a
-		if (a==1)
+		scanf("%d", &a); // Scrive la risposta, la mette in int a
+		if (a==1) //se int a =1
 		{
 			printf(" *Vero* \n");
-			somma++;
+			somma++; // fai incremento 1 alla somma 
 		}
 		else
 		{
@@ -57,9 +57,9 @@ int main ()
 			printf(" X-Falso-X \n");
 		}
 		
-		//somma = a + b + c; // dovrebbe fare la somma e metterla nel int somma 
+		//somma = a + b + c; // Commando falso
 		printf("%s \b ", name);
-		printf("IL TUO RISOLTATO E:%d\n", somma);// dovrebbe scrivere la somma
+		printf("IL TUO RISOLTATO E:%d\n", somma);// per scrivere nome IL TUO RISOLTATO E: il risoltato del quiz
 		
 		return 0;
 		case 0:
