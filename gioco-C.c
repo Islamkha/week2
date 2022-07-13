@@ -56,7 +56,7 @@ int main ()
 		
 		somma = a + b + c; // dovrebbe fare la somma e metterla nel int somma 
 		
-		printf(" IL TUO RISOLTATO E:\n",&somma);// dovrebbe scrivere la somma
+		printf(" IL TUO RISOLTATO E:\n",&somma);// dovrebbe scrivere la somma ***non risulta***
 		
 		break;
 		case 0:
@@ -64,5 +64,5 @@ int main ()
 		break;
 
 	return 0;
-}
+}    // ri-presentare il menu ***non risulta***
 }
