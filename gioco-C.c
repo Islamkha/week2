@@ -15,8 +15,8 @@ int main ()
 	{
 		case 1:
 		printf(" Inserisce Il Nome\n");
-		scanf("%c", &name); // l'utente dovrebbe scrivere il nome ***non risulta***
-		printf(" *Benvenuto*\n",name);
+		scanf("%s", &name); // l'utente dovrebbe scrivere il nome ***non risulta***
+		printf(" *Benvenuto*: %s\n",name);
 		printf(" Scegli la risposta corretta\n");
 		printf(" A-Quanti bit in ogni byte ?\n");
 		printf(" 1. 8 bit \n\b 2. 32 bit \n\b 3. 256 bit\n");
@@ -24,6 +24,7 @@ int main ()
 		if (a==1)
 		{
 			printf(" *Vero* \n");
+			somma++;
 		}
 		else
 		{
@@ -31,11 +32,12 @@ int main ()
 		}
 		
 		printf(" B- 172.16.15.20 e un indirizzio IP di Classe ?\n");
-		printf(" 1. A \n\b 2. B \n\b 3. C");
+		printf(" 1. A \n\b 2. B \n\b 3. C\n");
 		scanf("%d", &b);
 		if (b==2)
 		{
 			printf(" *Vero* \n");
+			somma++;
 		}
 		else
 		{
@@ -43,26 +45,29 @@ int main ()
 		}
 
 		printf(" C- Quale commando usiamo per creare nuovo file su Linux ?\n");
-		printf(" 1. cat \n\b 2. mkdir \n\b 3. touch");
+		printf(" 1. cat \n\b 2. mkdir \n\b 3. touch\n");
 		scanf("%d", &c);
 		if (c==3)
 		{
 			printf(" *Vero* \n");
+			somma++;
 		}
 		else
 		{
 			printf(" X-Falso-X \n");
 		}
 		
-		somma = a + b + c; // dovrebbe fare la somma e metterla nel int somma 
+		//somma = a + b + c; // dovrebbe fare la somma e metterla nel int somma 
+		printf("%s \b ", name);
+		printf("IL TUO RISOLTATO E:%d\n", somma);// dovrebbe scrivere la somma
 		
-		printf(" IL TUO RISOLTATO E:\n",&somma);// dovrebbe scrivere la somma ***non risulta***
-		
-		break;
+		return 0;
 		case 0:
+		
 		printf(" Riprova\n");
-		break;
+		
+		return 0;
 
 	return 0;
-}    // ri-presentare il menu ***non risulta***
+}
 }
